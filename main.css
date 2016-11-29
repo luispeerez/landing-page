@@ -1,0 +1,19 @@
+body, html{
+	font-family: sans-serif;
+	margin: 0; 
+	padding: 0;
+}
+#landing-page .section:nth-child(1){background: #f2992e}
+#landing-page .section:nth-child(2){background: #56bc8a;}
+#landing-page .section:nth-child(3){background: #a77dc2}
+#landing-page .section:nth-child(4){background: #36465d}
+
+#landing-page .section .section-inner{
+	max-width: 60%;
+	margin: 0 auto;
+}
+#landing-page .section .section-inner h1{
+	margin: 0;	
+	color: #fff;
+	text-align: center;
+}

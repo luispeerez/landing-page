@@ -1,0 +1,21 @@
+{
+  "name": "example-landingpage",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Luis <luis19prz@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "~2.8.9"
+  }
+}
