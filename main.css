@@ -12,8 +12,50 @@ body, html{
 	max-width: 60%;
 	margin: 0 auto;
 }
+
+#landing-page .section .section-inner:after{
+	content:'';
+	display: block;
+	clear: both;
+}
 #landing-page .section .section-inner h1{
 	margin: 0;	
 	color: #fff;
 	text-align: center;
+}
+#landing-page .landing-section{
+	display: flex;
+	
+}
+#landing-page .first-slide-content h1{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#landing-page .phone{
+  width: 310px;
+  height: 572px;
+  position: relative;
+}
+#landing-page .video-wrap{
+  display: block;
+  position: absolute;
+  top: 82px;
+  left: 38px;
+  background: #FFF;
+  width: 236px;
+  height: 420px;	
+}
+#landing-page .video-wrap video{
+	width: 236px;
+}
+
+#landing-page .cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/phone.svg);	
 }
