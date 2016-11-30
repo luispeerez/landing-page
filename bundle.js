@@ -101,6 +101,10 @@
 			key: 'componentDidMount',
 			value: function componentDidMount() {
 				$(document).ready(function () {
+
+					var wow = new WOW({});
+					wow.init();
+
 					$('#landing-page').fullpage({
 						navigation: true,
 						navigationPosition: 'right',
@@ -117,6 +121,42 @@
 					_react2.default.createElement(
 						'div',
 						{ id: 'landing-page' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'section' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'section-inner landing-section' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'phone wow slideInUp' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'video-wrap' },
+										_react2.default.createElement(
+											'video',
+											{
+												'data-autoplay': true,
+												loop: true,
+												autoPlay: 'true'
+											},
+											_react2.default.createElement('source', {
+												src: '/videos/video.mp4', type: 'video/mp4' })
+										)
+									),
+									_react2.default.createElement('div', { className: 'cover' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'first-slide-content wow slideInRight' },
+									_react2.default.createElement(
+										'h1',
+										null,
+										'Download our mobile app'
+									)
+								)
+							)
+						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'section' },
@@ -140,19 +180,6 @@
 									'h1',
 									null,
 									'About us'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'section' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'section-inner' },
-								_react2.default.createElement(
-									'h1',
-									null,
-									'Our team'
 								)
 							)
 						),
