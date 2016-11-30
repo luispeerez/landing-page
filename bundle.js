@@ -141,7 +141,7 @@
 												autoPlay: 'true'
 											},
 											_react2.default.createElement('source', {
-												src: '/videos/video.mp4', type: 'video/mp4' })
+												src: 'videos/video.mp4', type: 'video/mp4' })
 										)
 									),
 									_react2.default.createElement('div', { className: 'cover' })

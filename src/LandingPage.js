@@ -31,7 +31,7 @@ class LandingPage extends React.Component{
 				    					autoPlay="true"
 				    					>
 					    					<source 
-					    						src="/videos/video.mp4" type="video/mp4"/>
+					    						src="videos/video.mp4" type="video/mp4"/>
 				    					</video>
 				    			</div>
 				    			<div className="cover"></div>
