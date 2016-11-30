@@ -37,7 +37,7 @@ class LandingPage extends React.Component{
 				    			<div className="cover"></div>
 				    		</div>
 				    		<div className="first-slide-content wow slideInRight">
-				    			<h1>Download our app</h1>
+				    			<h1>Download our mobile app</h1>
 				    		</div>
 
 				    	</div>
