@@ -6,12 +6,16 @@ class LandingPage extends React.Component{
 		$(document).ready(function() {
 				
 				var wow = new WOW({});
-				wow.init();
+				//wow.init();
 
 		    $('#landing-page').fullpage({
 					navigation: true,
 					navigationPosition: 'right',
-					navigationTooltips: ['Register', 'About us', 'Out team', 'Contact us'],		    	
+					navigationTooltips: ['Register', 'About us', 'Out team', 'Contact us'],	
+					scrollBar: true,
+	        afterRender: function(){
+	          wow.init();
+	        }						
 		    });
 		});		
 	}
@@ -20,8 +24,19 @@ class LandingPage extends React.Component{
 		return(	
 			<div>
 				<div id="landing-page">
+				    <div className="section section-landing">
+		    			<h1 className="section-title wow fadeIn">Our software</h1>
+				    	<div className="section-inner flex-row">
+				    		<div className="">
+				    			<img src="images/studio2.png"/>
+				    		</div>
+				    		<div className="macbook-wrapper ">
+					    		<img src="images/macbook.png"/>
+				    		</div>
+				    	</div>
+				    </div>
 				    <div className="section">
-				    	<div className="section-inner landing-section">
+				    	<div className="section-inner video-section-content flex-row">
 				    		
 				    		<div className="phone wow slideInUp">
 				    			<div className="video-wrap">
@@ -36,18 +51,13 @@ class LandingPage extends React.Component{
 				    			</div>
 				    			<div className="cover"></div>
 				    		</div>
-				    		<div className="first-slide-content wow slideInRight">
+				    		<div className="wow slideInRight">
 				    			<h1>Download our mobile app</h1>
 				    		</div>
 
 				    	</div>
 
-				    </div>
-				    <div className="section">
-				    	<div className="section-inner">
-				    		<h1>Register</h1>
-				    	</div>
-				    </div>
+				    </div>				    
 				    <div className="section">
 				    	<div className="section-inner">
 				    		<h1>About us</h1>

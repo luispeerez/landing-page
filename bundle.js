@@ -103,12 +103,16 @@
 				$(document).ready(function () {
 
 					var wow = new WOW({});
-					wow.init();
+					//wow.init();
 
 					$('#landing-page').fullpage({
 						navigation: true,
 						navigationPosition: 'right',
-						navigationTooltips: ['Register', 'About us', 'Out team', 'Contact us']
+						navigationTooltips: ['Register', 'About us', 'Out team', 'Contact us'],
+						scrollBar: true,
+						afterRender: function afterRender() {
+							wow.init();
+						}
 					});
 				});
 			}
@@ -123,10 +127,33 @@
 						{ id: 'landing-page' },
 						_react2.default.createElement(
 							'div',
+							{ className: 'section section-landing' },
+							_react2.default.createElement(
+								'h1',
+								{ className: 'section-title wow fadeIn' },
+								'Our software'
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'section-inner flex-row' },
+								_react2.default.createElement(
+									'div',
+									{ className: '' },
+									_react2.default.createElement('img', { src: 'images/studio2.png' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'macbook-wrapper ' },
+									_react2.default.createElement('img', { src: 'images/macbook.png' })
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
 							{ className: 'section' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'section-inner landing-section' },
+								{ className: 'section-inner video-section-content flex-row' },
 								_react2.default.createElement(
 									'div',
 									{ className: 'phone wow slideInUp' },
@@ -148,25 +175,12 @@
 								),
 								_react2.default.createElement(
 									'div',
-									{ className: 'first-slide-content wow slideInRight' },
+									{ className: 'wow slideInRight' },
 									_react2.default.createElement(
 										'h1',
 										null,
 										'Download our mobile app'
 									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'section' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'section-inner' },
-								_react2.default.createElement(
-									'h1',
-									null,
-									'Register'
 								)
 							)
 						),

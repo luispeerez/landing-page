@@ -2,17 +2,23 @@ body, html{
 	font-family: sans-serif;
 	margin: 0; 
 	padding: 0;
+	overflow: hidden!important;
 }
-#landing-page .section:nth-child(1){background: #f2992e}
-#landing-page .section:nth-child(2){background: #56bc8a;}
+
+.flex-row{
+	display: flex;
+}
+
+#landing-page .section:nth-child(1){background: #56bc8a}
+#landing-page .section:nth-child(2){background: #f2992e;}
 #landing-page .section:nth-child(3){background: #a77dc2}
 #landing-page .section:nth-child(4){background: #36465d}
 
+#landing-page .section-landing img{max-width: 100%;}
 #landing-page .section .section-inner{
 	max-width: 60%;
 	margin: 0 auto;
 }
-
 #landing-page .section .section-inner:after{
 	content:'';
 	display: block;
@@ -23,14 +29,25 @@ body, html{
 	color: #fff;
 	text-align: center;
 }
-#landing-page .landing-section{
-	display: flex;
-	
-}
-#landing-page .first-slide-content h1{
+
+#landing-page .section-landing{position: relative;}
+#landing-page .section-landing .section-inner{max-width: 65%}
+#landing-page .section-landing .macbook-wrapper{max-width: 60%}
+
+
+#landing-page .section-landing h1,
+#landing-page .video-section-content h1{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+#landing-page .section .section-title{
+	color: #fff;
+	position: static;
+	top: auto;
+	transform: none;
+	text-align: center;
 }
 
 #landing-page .phone{
