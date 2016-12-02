@@ -13,6 +13,7 @@ class LandingPage extends React.Component{
 					navigationPosition: 'right',
 					navigationTooltips: ['Register', 'About us', 'Out team', 'Contact us'],	
 					scrollBar: true,
+	        anchors:['landing1', 'landing2','landing3','landing4'],
 	        afterRender: function(){
 	          wow.init();
 	        }						
@@ -28,12 +29,13 @@ class LandingPage extends React.Component{
 		    			<h1 className="section-title wow fadeIn">Our software</h1>
 				    	<div className="section-inner flex-row">
 				    		<div className="">
-				    			<img src="images/studio2.png"/>
+				    			<img data-src="images/studio2.png"/>
 				    		</div>
 				    		<div className="macbook-wrapper ">
-					    		<img src="images/macbook.png"/>
+					    		<img data-src="images/macbook.png"/>
 				    		</div>
 				    	</div>
+				    	<a href="#landing2" className="continue-btn wow slideInUp">What is PlayerPro?</a>
 				    </div>
 				    <div className="section">
 				    	<div className="section-inner video-section-content flex-row">
@@ -46,7 +48,7 @@ class LandingPage extends React.Component{
 				    					autoPlay="true"
 				    					>
 					    					<source 
-					    						src="videos/video.mp4" type="video/mp4"/>
+					    						data-src="videos/video.mp4" type="video/mp4"/>
 				    					</video>
 				    			</div>
 				    			<div className="cover"></div>

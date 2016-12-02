@@ -33,6 +33,21 @@ body, html{
 #landing-page .section-landing{position: relative;}
 #landing-page .section-landing .section-inner{max-width: 65%}
 #landing-page .section-landing .macbook-wrapper{max-width: 60%}
+#landing-page .continue-btn{
+  background: #526a8d;
+	border: 0;
+  border-top: 4px solid #36465d;
+  bottom: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;	
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
 
 
 #landing-page .section-landing h1,

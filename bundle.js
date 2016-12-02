@@ -110,6 +110,7 @@
 						navigationPosition: 'right',
 						navigationTooltips: ['Register', 'About us', 'Out team', 'Contact us'],
 						scrollBar: true,
+						anchors: ['landing1', 'landing2', 'landing3', 'landing4'],
 						afterRender: function afterRender() {
 							wow.init();
 						}
@@ -139,13 +140,18 @@
 								_react2.default.createElement(
 									'div',
 									{ className: '' },
-									_react2.default.createElement('img', { src: 'images/studio2.png' })
+									_react2.default.createElement('img', { 'data-src': 'images/studio2.png' })
 								),
 								_react2.default.createElement(
 									'div',
 									{ className: 'macbook-wrapper ' },
-									_react2.default.createElement('img', { src: 'images/macbook.png' })
+									_react2.default.createElement('img', { 'data-src': 'images/macbook.png' })
 								)
+							),
+							_react2.default.createElement(
+								'a',
+								{ href: '#landing2', className: 'continue-btn wow slideInUp' },
+								'What is PlayerPro?'
 							)
 						),
 						_react2.default.createElement(
@@ -168,7 +174,7 @@
 												autoPlay: 'true'
 											},
 											_react2.default.createElement('source', {
-												src: 'videos/video.mp4', type: 'video/mp4' })
+												'data-src': 'videos/video.mp4', type: 'video/mp4' })
 										)
 									),
 									_react2.default.createElement('div', { className: 'cover' })
