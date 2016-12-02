@@ -181,7 +181,7 @@
 								),
 								_react2.default.createElement(
 									'div',
-									{ className: 'wow slideInRight' },
+									{ className: 'wow slideInRight video-title' },
 									_react2.default.createElement(
 										'h1',
 										null,

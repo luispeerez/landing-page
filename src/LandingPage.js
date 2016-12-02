@@ -53,7 +53,7 @@ class LandingPage extends React.Component{
 				    			</div>
 				    			<div className="cover"></div>
 				    		</div>
-				    		<div className="wow slideInRight">
+				    		<div className="wow slideInRight video-title">
 				    			<h1>Download our mobile app</h1>
 				    		</div>
 
